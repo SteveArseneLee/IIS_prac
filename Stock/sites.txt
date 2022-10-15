@@ -1,0 +1,3 @@
+https://www.analyticsvidhya.com/blog/2021/06/download-financial-dataset-using-yahoo-finance-in-python-a-complete-guide/
+https://www.learndatasci.com/tutorials/python-finance-part-yahoo-finance-api-pandas-matplotlib/
+https://rjunaidraza.medium.com/yahoo-finance-api-to-get-stocks-tickers-data-in-python-c49820249a18
