@@ -23,3 +23,24 @@
 - mapValues()
 - flatMapValues()   
 는 Value만 다루는 연산들이지만 RDD에서 Key는 유지됨
+
+### RDD transformation
+
+- collect()
+- take(숫자) : 숫자만큼의 데이터를 임의로 뽑기
+- first() : 첫번째 element
+- count() : 총 element 개수
+
+
+### Aggregate
+- RDD 데이터 타입과 Action결과 타입이 다를 경우 사용하며 파티션 단위의 연산 결과를 합치는 과정을 거친다
+- RDD.aggregate(zeroValue, seqOp, combOp)
+    - zeroValue : 각 파티션에서 누적할 시작 값
+    - seqOp : 타입 변경 함수
+    - combOp : 합치는 함수
+
+
+### reduceByKey
+*RDD.reduce(f) vs RDD.reduceByKey(func, numpartitions=None, partitionFunc=<function portable_hash>)*
+- reduce: 주어지는 함수를 기준으로 요소들을 합침 (action)
+- reduceByKey: Key를 기준으로 그룹을 만들고 합침 (trans)
