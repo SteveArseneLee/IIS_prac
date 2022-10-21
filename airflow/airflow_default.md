@@ -1,7 +1,4 @@
-```sh
-pip install apache-airflow-providers-apache-spark
-```
-
+# Airflow
 ```py
 from datetime import datetime
 
